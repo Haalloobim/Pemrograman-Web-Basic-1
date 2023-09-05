@@ -8,7 +8,7 @@
     <title>Basic Web Programming - 1</title>
 </head>
 
-<body class="bg-slate-50 pb-12">
+<body class="bg-slate-50 pb-24">
     <div class="flex flex-col items-center">
         <header class="bg-white p-4 shadow-lg w-full">
             <nav class="text-lg font-medium flex flex-row gap-8 justify-center">
@@ -32,7 +32,7 @@
                 <p class="font-normal text-lg">Perkenalkan nama saya Muhammad Bimatara Indianto dari PWEB H</p>
                 <p class="font-normal text-lg">Disini saya mengerjakan Tugas Pertemuan ke 2 dari Pemroraman Web</p>
 
-                <img src="./img/Capture.JPG" alt="MyPict" class="mt-4 rounded-full" >
+                <img src="./img/Capture.JPG" alt="MyPict" class="mt-4 rounded-full">
             </div>
         </div>
 
@@ -72,8 +72,25 @@
                 </tr>
             </table>
         </div>
-        <div id="form">
-
+        <div id="form" class="flex flex-col gap-2 mt-12 text-center">
+            <h1 class="text-lg font-bold text-center">Contoh Form</h1>
+            <form action="" method="post" class="flex flex-col gap-4">
+                <div>
+                    <label for="nama">Nama :</label>
+                    <input type="text" name="nama" id="nama" placeholder="Masukkan Nama" class="w-44 py-1 px-2 rounded-lg border border-slate-200">
+                </div>
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" placeholder="Masukkan email" class="w-44 py-1 px-2 rounded-lg border border-slate-200">
+                </div>
+                <div>
+                    <label for="umur">Umur :</label>
+                    <input type="number" name="umur" id="umur" placeholder="Masukkan umur" class="w-44 py-1 px-2 rounded-lg border border-slate-200">
+                </div>
+                <div>
+                    <button class="bg-white py-2 px-6 rounded-lg border border-slate-400 shadow-lg"> Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>
